@@ -1,1 +1,1 @@
-ReaCom Edu by LanDecs 
+echo "# ReaCom Edu by LanDecs" > README.md && git init && git add README.md && git commit -m "Initial commit" && git branch -M main && git remote add origin <repository-url> && git push -u origin main

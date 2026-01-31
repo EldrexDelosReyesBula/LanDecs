@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About LanDecs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#FF5E3A",
+                        "secondary": "#3A86FF",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#0e1015",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#161920",
+                        "off-white": "#f3f4f6",
+                        "muted": "#9ca3af",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'ember': '0 0 25px -5px rgba(255, 94, 58, 0.4)',
+                        'ember-sm': '0 0 12px -3px rgba(255, 94, 58, 0.3)',
+                        'ember-glow': '0 0 10px rgba(255, 94, 58, 0.6)',
+                        'blue-glow': '0 0 20px rgba(58, 134, 255, 0.3)',
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0e1015;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #2d3340;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #FF5E3A;
+        }
+
+        .reveal-text {
+            animation: fadeUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .reveal-delay-1 {
+            animation-delay: 0.2s;
+        }
+
+        .reveal-delay-2 {
+            animation-delay: 0.4s;
+        }
+
+        .reveal-delay-3 {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .text-glow {
+            text-shadow: 0 0 15px rgba(255, 94, 58, 0.4);
+        }
+
+        .text-blue-glow {
+            text-shadow: 0 0 15px rgba(58, 134, 255, 0.4);
+        }
+
+        .gradient-border {
+            position: relative;
+            border-radius: 0.75rem;
+        }
+
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            right: -1px;
+            bottom: -1px;
+            background: linear-gradient(45deg, #FF5E3A, #3A86FF, #FF5E3A);
+            border-radius: inherit;
+            z-index: -1;
+            opacity: 0.3;
+            transition: opacity 0.3s ease;
+        }
+
+        .gradient-border:hover::before {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-[#111318] dark:text-off-white font-display overflow-x-hidden selection:bg-primary/30 selection:text-white">
+    <div class="relative flex min-h-screen w-full flex-col group/design-root">
+        <!-- Header with Back Button -->
+        <header class="sticky top-0 z-50 w-full backdrop-blur-md bg-white/80 dark:bg-background-dark/80 border-b border-gray-200 dark:border-white/5 transition-colors duration-300">
+            <div class="layout-container max-w-[1280px] mx-auto px-4 sm:px-10 h-16 flex items-center justify-between">
+                <a href="../index.html" class="flex items-center text-primary font-bold hover:text-[#ff8a6a] transition-colors duration-300">
+                    <span class="material-symbols-outlined mr-2">arrow_back</span> Back
+                </a>
+                <h1 class="text-lg font-serif text-[#111318] dark:text-off-white"></h1>
+            </div>
+        </header>
+
+        <main class="flex-grow">
+            <!-- Hero Section -->
+            <section class="relative pt-24 pb-20 px-4 sm:px-10 md:pt-32 md:pb-28 max-w-[1280px] mx-auto">
+                <div class="flex flex-col gap-6 md:gap-10 max-w-4xl mx-auto text-center md:text-left">
+                    <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-medium leading-[1.1] tracking-tight text-[#111318] dark:text-off-white reveal-text">
+                        innovation you can <br /><span class="text-primary italic text-glow">trust.</span>
+                    </h1>
+                    <div class="flex flex-col md:flex-row gap-8 items-start md:items-center mt-4 reveal-text reveal-delay-1">
+                        <div class="h-[1px] w-12 bg-primary shadow-[0_0_8px_rgba(255,94,58,0.8)] hidden md:block"></div>
+                        <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-xl font-light leading-relaxed">
+                            LanDecs builds thoughtful tools that simplify complex decisions. In a world crowded with noise, we focus on clarity, ensuring technology serves people, not overwhelms them.
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-16 md:mt-24 w-full h-[400px] md:h-[600px] rounded-lg overflow-hidden relative reveal-text reveal-delay-2 border border-white/5 shadow-2xl shadow-black/50">
+                    <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/20 to-transparent z-10"></div>
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-700 hover:scale-105 opacity-80" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD-gEkQNbhDNFbIyDJJ7v_7tcspOmimeTFsSoaxV30Q5GX83DkFc_YsNOmMcVR1K0UjXZwGZL2bhoYX-cPxjVadUvAYAjzWYViP-qlAMzAxu0OERZovzBlvD3o5UFM5dRFjCVIapQcYLSIgKnEhYExOHMICiyGItr_Xn1SfUQtLzIZNXIN9LkUSgvJ7x5HG46s5WNKoQMdMlWESQkHJjSZIFucJnCkaKB_MKPvS5qB73ujmebTEwPkHAi2IcMtqv5aH7CgV_g0_F2Y");'></div>
+                    <div class="absolute bottom-6 left-6 md:bottom-10 md:left-10 z-20 text-white">
+                        <span class="text-sm font-bold uppercase tracking-widest text-primary mb-2 block">Our Philosophy</span>
+                        <p class="text-xl md:text-3xl font-serif italic text-off-white">"Simplify. Decide. Grow."</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Meaning of LanDecs Section -->
+            <section class="py-20 px-4 sm:px-10 bg-white dark:bg-surface-dark">
+                <div class="max-w-[1280px] mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 class="font-serif text-3xl md:text-4xl text-[#111318] dark:text-off-white font-semibold mb-6">The Meaning Behind Our Name</h2>
+                        <div class="h-0.5 w-24 bg-primary mx-auto shadow-[0_0_10px_rgba(255,94,58,0.5)]"></div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div class="space-y-8">
+                            <div class="flex items-start gap-6">
+                                <div class="flex-shrink-0 w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                                    <span class="text-2xl font-bold text-primary">Lan</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-[#111318] dark:text-white mb-3">The Connection</h3>
+                                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                                        Represents the strong, continuous connection between the company and the people it serves. It symbolizes adaptability, communication, collaboration, and our shared journey toward success in a constantly changing world.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-6">
+                                <div class="flex-shrink-0 w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center">
+                                    <span class="text-2xl font-bold text-secondary">Decs</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-[#111318] dark:text-white mb-3">The Decisions</h3>
+                                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                                        Stands for the power of strategic, intentional choices that shape our direction, drive operations, and define impact. These decisions are at the heart of sustainable growth, innovation, and creating real value.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gradient-to-br from-primary/5 to-secondary/5 dark:from-primary/10 dark:to-secondary/10 p-8 rounded-xl border border-gray-200 dark:border-white/10">
+                            <h3 class="text-2xl font-serif text-[#111318] dark:text-white mb-6 text-center">The Balance</h3>
+                            <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-center">
+                                <span class="text-primary font-bold">LanDecs</span> expresses the perfect balance between <span class="text-primary">meaningful connections</span> and <span class="text-secondary">thoughtful decisions</span>. It's a name rooted in relationships and intentional actions, reflecting our dedication to progress, creativity, and purposeful growth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mission & Vision Section -->
+            <section class="py-20 px-4 sm:px-10 bg-gradient-to-b from-background-light to-white dark:from-surface-dark dark:to-background-dark">
+                <div class="max-w-[1280px] mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <!-- Vision Card -->
+                        <div class="gradient-border bg-surface-light dark:bg-surface-dark p-8 rounded-xl shadow-lg">
+                            <div class="flex items-center gap-4 mb-8">
+                                <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-2xl text-primary">visibility</span>
+                                </div>
+                                <h2 class="font-serif text-3xl text-[#111318] dark:text-off-white font-semibold">Our Vision</h2>
+                            </div>
+                            <div class="pl-16">
+                                <p class="text-lg italic text-gray-700 dark:text-gray-300 leading-relaxed border-l-4 border-primary pl-6 py-2">
+                                    "To be a catalyst for meaningful connections and purposeful decisions, driving innovation, growth, and positive impact across communities and industries."
+                                </p>
+                                <div class="mt-8 space-y-4">
+                                    <div class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+                                        <p class="text-gray-600 dark:text-gray-400">Catalyst for meaningful connections</p>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+                                        <p class="text-gray-600 dark:text-gray-400">Driver of innovation and growth</p>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+                                        <p class="text-gray-600 dark:text-gray-400">Positive impact across communities</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mission Card -->
+                        <div class="gradient-border bg-surface-light dark:bg-surface-dark p-8 rounded-xl shadow-lg">
+                            <div class="flex items-center gap-4 mb-8">
+                                <div class="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-2xl text-secondary">target</span>
+                                </div>
+                                <h2 class="font-serif text-3xl text-[#111318] dark:text-off-white font-semibold">Our Mission</h2>
+                            </div>
+                            <div class="pl-16">
+                                <p class="text-lg italic text-gray-700 dark:text-gray-300 leading-relaxed border-l-4 border-secondary pl-6 py-2">
+                                    "We empower people and organizations through strong relationships, thoughtful strategies, and innovative solutions. By fostering collaboration, embracing change, and making intentional decisions, we create sustainable growth, meaningful impact, and a future of possibilities."
+                                </p>
+                                <div class="mt-8 space-y-4">
+                                    <div class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-secondary text-sm mt-1">group</span>
+                                        <p class="text-gray-600 dark:text-gray-400">Empower through relationships & strategies</p>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-secondary text-sm mt-1">handshake</span>
+                                        <p class="text-gray-600 dark:text-gray-400">Foster collaboration & embrace change</p>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-secondary text-sm mt-1">trending_up</span>
+                                        <p class="text-gray-600 dark:text-gray-400">Create sustainable growth & impact</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Who We Are Section -->
+            <section class="py-20 px-4 sm:px-10 bg-white dark:bg-background-dark border-y border-gray-100 dark:border-white/5 relative">
+                <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 blur-[120px] rounded-full pointer-events-none"></div>
+                <div class="max-w-[1280px] mx-auto relative z-10">
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8">
+                        <div class="md:col-span-4 lg:col-span-3">
+                            <div class="sticky top-28">
+                                <h2 class="font-serif text-3xl md:text-4xl text-[#111318] dark:text-off-white font-semibold mb-4">Who We Are</h2>
+                                <div class="h-0.5 w-16 bg-primary shadow-[0_0_10px_rgba(255,94,58,0.5)]"></div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-8 lg:col-span-9 flex flex-col gap-16">
+                            <div class="max-w-2xl">
+                                <h3 class="text-2xl font-medium text-[#111318] dark:text-white mb-6">Architects of Direction</h3>
+                                <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-8 font-light">
+                                    Founded in 2020, LanDecs is an independent startup committed to helping people make better decisions through clarity, simplicity, and thoughtful innovation. Every feature, update, and experiment is designed intentionally to serve people.
+                                </p>
+                                <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-8 font-light">
+                                    Our philosophy is to build technology that supports people, not overwhelms them. We continuously iterate, refine, and focus only on what truly matters, ensuring every action is deliberate and meaningful.
+                                </p>
+                                <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-8 font-light">
+                                    LanDecs is small but relentless in its pursuit of clarity. With each update, we aim to empower people to make smarter decisions confidently and efficiently.
+                                </p>
+                                <a class="inline-flex items-center text-primary font-bold hover:text-[#ff8a6a] transition-all group" href="#">
+                                    Read Our Manifesto
+                                    <span class="material-symbols-outlined text-lg ml-1 group-hover:ml-2 transition-all">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quote Section -->
+            <section class="py-24 px-4 bg-primary/5 dark:bg-gradient-to-b dark:from-surface-dark dark:to-background-dark">
+                <div class="max-w-4xl mx-auto text-center">
+                    <span class="material-symbols-outlined text-5xl text-primary/80 mb-8 drop-shadow-[0_0_10px_rgba(255,94,58,0.3)]">format_quote</span>
+                    <h2 class="font-serif text-3xl md:text-5xl font-medium leading-tight text-[#111318] dark:text-off-white mb-10">
+                        "Growth does not come from having all the answers, but from making better decisions than yesterday."
+                    </h2>
+                    <div class="flex items-center justify-center gap-4">
+                        <div class="w-12 h-12 rounded-full border-2 border-primary/30 p-0.5">
+                            <div class="w-full h-full rounded-full bg-gray-300 bg-cover bg-center" style='background-image: url("https://eldrex.landecs.org/squad/eldrex.png");'></div>
+                        </div>
+                        <div class="text-left">
+                            <p class="text-sm font-bold text-[#111318] dark:text-white">Eldrex Delos Reyes Bula</p>
+                            <p class="text-xs text-primary font-bold uppercase tracking-wider">Founder & CEO, LanDecs</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our Story Section -->
+            <section class="py-20 px-4 sm:px-10 max-w-[1280px] mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="order-2 lg:order-1 grid grid-cols-2 gap-4">
+                        <div class="space-y-4 pt-12">
+                            <div class="w-full aspect-[3/4] rounded-lg bg-cover bg-center opacity-90 hover:opacity-100 transition-opacity duration-500 shadow-2xl" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCQx7lr9gSz5tUMzi40_AcZd65O22gryRt2VdpOZ_OAT3qcsxQVE-6Snl3oRF1Tcq9GwIWCTBnxpw3Dk-emBJBzMO_tcVsx2OE8MPAzD5BnHFDI2AA7LMEES7FRwLKjxw1cVuguS7qMk2woDg-xb2C8ZPm5g4Q0MYaw3q6rC2OgcLKL28okmcspd0EkAQ_qFNsJyIKNDNiyObwfskEX-yAySTjiLUibMahhsieh-AhzcZpKQ5eyQqVy6PlcpRDkcWrhebdpocsLTTc");'></div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="w-full aspect-[3/4] rounded-lg bg-cover bg-center opacity-90 hover:opacity-100 transition-opacity duration-500 shadow-2xl" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDIZ0ZlnRJZubfFoiz_2n8a1kkQkvWS143X7COzkgofn_6eEOB8O6bjAtBNKIjvvReTefVTHjANNJ3loT6Acy8YI1cL6zyut_5nmINNRynBmftCq0TjG2PwUf90Gbopyi23DKM-eo-PE7wFqZp1p-UMFkrw8Mwn_cIBBnJFomMsi35nYGjjgjwQoRTWj_jidbZhaXpfrNhSMjV63wErX4p0tx6b4B4EHwW85jccG6cqIdWaAEib2lW8HrKkfhuhKjK4atHrwkNeUps");'></div>
+                        </div>
+                    </div>
+                    <div class="order-1 lg:order-2">
+                        <h2 class="font-serif text-3xl md:text-4xl text-[#111318] dark:text-off-white font-semibold mb-10">Our Story</h2>
+                        <div class="relative pl-8 border-l border-gray-200 dark:border-white/10 space-y-16">
+                            <div class="relative group">
+                                <div class="absolute -left-[39px] top-1.5 h-5 w-5 rounded-full border-[3px] border-background-dark bg-gray-600 dark:bg-gray-700 group-hover:bg-primary group-hover:shadow-[0_0_10px_rgba(255,94,58,0.8)] transition-all"></div>
+                                <span class="text-xs font-bold text-primary uppercase tracking-wider mb-2 block">2020</span>
+                                <h3 class="text-xl font-bold text-[#111318] dark:text-white mb-3">The Beginning</h3>
+                                <p class="text-gray-600 dark:text-gray-400 font-light leading-relaxed">
+                                    LanDecs started in 2020 as a solo initiative by its founder, focused on one question: how can tools provide clarity instead of confusion? Early experiments shaped a deliberate approach to decision-making that continues today.
+                                </p>
+                            </div>
+                            <div class="relative group">
+                                <div class="absolute -left-[39px] top-1.5 h-5 w-5 rounded-full border-[3px] border-background-dark bg-gray-600 dark:bg-gray-700 group-hover:bg-primary group-hover:shadow-[0_0_10px_rgba(255,94,58,0.8)] transition-all"></div>
+                                <span class="text-xs font-bold text-gray-500 dark:text-gray-500 uppercase tracking-wider mb-2 block">2022</span>
+                                <h3 class="text-xl font-bold text-[#111318] dark:text-white mb-3">Learning Through Iteration</h3>
+                                <p class="text-gray-600 dark:text-gray-400 font-light leading-relaxed">
+                                    As LanDecs grew, each update taught lessons about focus and simplicity. Features were added, refined, or removed, teaching that clarity comes from knowing what to prioritize and what to leave behind.
+                                </p>
+                            </div>
+                            <div class="relative group">
+                                <div class="absolute -left-[39px] top-1.5 h-5 w-5 rounded-full border-[3px] border-background-dark bg-primary dark:bg-primary shadow-[0_0_10px_rgba(255,94,58,0.6)]"></div>
+                                <span class="text-xs font-bold text-white uppercase tracking-wider mb-2 block">Today</span>
+                                <h3 class="text-xl font-bold text-[#111318] dark:text-white mb-3">Still Building Forward</h3>
+                                <p class="text-gray-600 dark:text-gray-400 font-light leading-relaxed">
+                                    LanDecs remains an independent, founder-led startup. Every decision is intentional, every update purposeful, as we continue to grow, improve, and serve our users better with each iteration.
+                                </p>
+                                <p class="text-gray-600 dark:text-gray-400 font-light leading-relaxed">
+                                    Clarity remains our guiding principle. Innovation you can trust is more than a slogan — it's our commitment to everyone who interacts with LanDecs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+        <!-- Footer -->
+        <footer id="contact" class="w-full px-4 md:px-10 py-16 bg-background-dark border-t border-white/10">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-center gap-4">
+                            <img src="https://eldrex.landecs.org/landecs.png" alt="LanDecs Logo" class="w-16 h-16 rounded-xl object-contain">
+                            <h1 class="text-5xl font-bold text-white lowercase tracking-tight">landecs</h1>
+                        </div>
+                        <p class="text-gray-500 max-w-md text-lg leading-relaxed">
+                            We strengthen the links between people and ideas, giving you the insight and direction to thrive in a constantly changing world.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-12 lg:gap-20">
+                        <div class="flex flex-col gap-4">
+                            <h4 class="text-white font-semibold text-lg">Company</h4>
+                            <a href="https://www.landecs.org/" class="text-gray-500 hover:text-primary transition-colors duration-300">Home</a>
+                            <a href="#" class="text-gray-500 hover:text-primary transition-colors duration-300">About</a>
+                            <a href="#tools" class="text-gray-500 hover:text-primary transition-colors duration-300">Products</a>
+                            <a href="#design" class="text-gray-500 hover:text-primary transition-colors duration-300">Design</a>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <h4 class="text-white font-semibold text-lg">Resources</h4>
+                            <a href="https://www.landecs.org/docs/privacy" class="text-gray-500 hover:text-primary transition-colors duration-300">Privacy</a>
+                            <a href="https://www.landecs.org/docs/terms" class="text-gray-500 hover:text-primary transition-colors duration-300">Terms</a>
+                            <a href="https://www.landecs.org/docs/donation" class="text-gray-500 hover:text-primary transition-colors duration-300">Donate</a>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <h4 class="text-white font-semibold text-lg">Connect</h4>
+                            <div class="flex flex-col gap-2">
+                                <a href="https://x.com/Landecs1" target="_blank" class="flex items-center gap-2 text-gray-500 hover:text-primary transition-colors duration-300">
+                                    <i class="fab fa-twitter w-5 h-5"></i> Twitter
+                                </a>
+                                <a href="www.linkedin.com/in/landecsorg1" target="_blank" class="flex items-center gap-2 text-gray-500 hover:text-primary transition-colors duration-300">
+                                    <i class="fab fa-linkedin w-5 h-5"></i> LinkedIn
+                                </a>
+                                <a href="https://www.facebook.com/landecs" target="_blank" class="flex items-center gap-2 text-gray-500 hover:text-primary transition-colors duration-300">
+                                    <i class="fab fa-facebook w-5 h-5"></i> Facebook
+                                </a>
+                                <a href="mailto:landecs.org@gmail.com" class="flex items-center gap-2 text-gray-500 hover:text-primary transition-colors duration-300">
+                                    <i class="fas fa-envelope w-5 h-5"></i> Email Us
+                                </a>
+                                <a href="tel:+639516326952" class="flex items-center gap-2 text-gray-500 hover:text-primary transition-colors duration-300">
+                                    <i class="fas fa-phone w-5 h-5"></i> Call Us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent my-8"></div>
+
+                <!-- Copyright -->
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                    <p class="text-gray-600 text-sm">© 2020 - 2025 LanDecs. All rights reserved.</p>
+                    <p class="text-gray-500 text-sm">Innovation you can trust.</p>
+                </div>
+            </div>
+        </footer>
+
+    <script>
+        // Add reveal animations on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const revealElements = document.querySelectorAll('.reveal-text');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            revealElements.forEach(element => {
+                element.style.animationPlayState = 'paused';
+                observer.observe(element);
+            });
+
+            // Add hover effects to story timeline dots
+            const timelineDots = document.querySelectorAll('.relative.group');
+            timelineDots.forEach(dot => {
+                dot.addEventListener('mouseenter', function() {
+                    const circle = this.querySelector('.absolute');
+                    if (circle) {
+                        circle.style.transform = 'scale(1.2)';
+                    }
+                });
+                
+                dot.addEventListener('mouseleave', function() {
+                    const circle = this.querySelector('.absolute');
+                    if (circle && !circle.classList.contains('bg-primary')) {
+                        circle.style.transform = 'scale(1)';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

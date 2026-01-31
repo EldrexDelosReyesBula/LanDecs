@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>LanDecs - Support & Donations</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec4913",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#181311",
+                        "surface-dark": "#231b18",
+                    },
+                    fontFamily: {
+                        "sans": ["Inter", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #181311;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #392c28;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ec4913;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeInUp {
+            animation: fadeInUp 0.5s ease-out;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-sans overflow-x-hidden antialiased">
+    <div class="relative flex min-h-screen flex-col">
+        <header class="sticky top-0 z-50 flex items-center justify-between bg-background-dark/90 backdrop-blur-md px-4 sm:px-10 py-3 border-b border-[#392c28]/50">
+
+            <button id="backButton" class="flex items-center gap-1 text-white hover:text-primary transition-colors">
+                <span class="material-symbols-outlined text-2xl">arrow_back</span>
+                <span class="text-sm font-medium">Back</span>
+            </button>
+
+            <!-- Centered Logo -->
+            <div class="absolute left-1/2 -translate-x-1/2">
+                <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] font-sans">Donate</h2>
+            </div>
+
+            <!-- Empty div for spacing -->
+            <div class="w-16"></div>
+        </header>
+        <main class="flex-grow flex flex-col items-center">
+            <!-- Hero Section -->
+            <section class="w-full max-w-7xl px-4 py-12 md:px-12 md:py-20 lg:py-24">
+                <div class="flex flex-col items-center text-center gap-6 max-w-3xl mx-auto animate-fadeInUp">
+                    <div class="inline-flex items-center rounded-full border border-[#392c28] bg-[#231b18] px-3 py-1 text-xs font-medium text-gray-300">
+                        <span class="mr-1 text-primary material-symbols-outlined text-[16px]">verified</span>
+                        Independent &amp; Ad-Free
+                    </div>
+                    <h1 class="text-white text-4xl md:text-6xl font-black leading-tight tracking-[-0.033em] font-serif">
+                        Fueling Clarity <br /> &amp; Growth
+                    </h1>
+                    <p class="text-gray-300 text-lg md:text-xl font-light leading-relaxed max-w-2xl">
+                        Your contributions help keep LanDecs independent, focused on clarity, and free from distractions. Partner with us in making better decisions for everyone.
+                    </p>
+                </div>
+            </section>
+            <!-- Transparency & Impact Section -->
+            <section class="w-full max-w-7xl px-4 pb-16 md:px-12">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Infrastructure -->
+                    <div class="bg-surface-dark p-6 rounded-xl border border-[#392c28]/50 flex flex-col gap-3 animate-fadeInUp" style="animation-delay: 0.1s">
+                        <div class="flex items-center gap-3 text-white mb-2">
+                            <span class="material-symbols-outlined text-primary">dns</span>
+                            <h3 class="font-bold text-lg font-serif">Infrastructure</h3>
+                        </div>
+                        <div class="w-full bg-[#392c28] rounded-full h-1.5 mb-1">
+                            <div class="bg-primary h-1.5 rounded-full" style="width: 75%"></div>
+                        </div>
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            Your contributions help us maintain robust hosting, reliable servers, and a global content delivery network. This ensures that LanDecs stays fast, accessible, and dependable for every user, everywhere.
+                        </p>
+                    </div>
+
+                    <!-- Development -->
+                    <div class="bg-surface-dark p-6 rounded-xl border border-[#392c28]/50 flex flex-col gap-3 animate-fadeInUp" style="animation-delay: 0.2s">
+                        <div class="flex items-center gap-3 text-white mb-2">
+                            <span class="material-symbols-outlined text-primary">code</span>
+                            <h3 class="font-bold text-lg font-serif">Development</h3>
+                        </div>
+                        <div class="w-full bg-[#392c28] rounded-full h-1.5 mb-1">
+                            <div class="bg-primary h-1.5 rounded-full" style="width: 60%"></div>
+                        </div>
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            Every donation fuels ongoing improvements to our decision engine, the creation of new features, and enhancements to the user experience. Together, we keep LanDecs evolving and meaningful.
+                        </p>
+                    </div>
+
+                    <!-- Community -->
+                    <div class="bg-surface-dark p-6 rounded-xl border border-[#392c28]/50 flex flex-col gap-3 animate-fadeInUp" style="animation-delay: 0.3s">
+                        <div class="flex items-center gap-3 text-white mb-2">
+                            <span class="material-symbols-outlined text-primary">group</span>
+                            <h3 class="font-bold text-lg font-serif">Community</h3>
+                        </div>
+                        <div class="w-full bg-[#392c28] rounded-full h-1.5 mb-1">
+                            <div class="bg-primary h-1.5 rounded-full" style="width: 40%"></div>
+                        </div>
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            Your support nurtures a thriving, ad-free community. It powers educational resources, responsive support channels, and spaces where users can make thoughtful decisions without distractions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-6 text-center">
+                    <p class="text-xs text-gray-500 flex items-center justify-center gap-1">
+                        <span class="material-symbols-outlined text-[14px]">info</span>
+                        Every contribution goes entirely toward sustaining and improving LanDecs, ensuring a transparent and lasting impact.
+                    </p>
+                </div>
+            </section>
+            <!-- Donation Options -->
+            <section class="w-full max-w-7xl px-4 py-8 md:px-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Ko-fi -->
+                    <div class="group relative overflow-hidden rounded-xl bg-surface-dark shadow-lg transition-all hover:shadow-primary/5 border border-[#392c28] hover:border-primary/30 animate-fadeInUp" style="animation-delay: 0.7s">
+                        <div class="relative flex h-full flex-col justify-end p-6 pt-20">
+                            <div class="mb-4 flex size-12 items-center justify-center rounded-full bg-purple-500/20 text-purple-400 backdrop-blur-sm">
+                                <span class="material-symbols-outlined">volunteer_activism</span>
+                            </div>
+                            <h3 class="mb-1 text-xl font-bold text-white font-serif">Ko-fi</h3>
+                            <p class="mb-6 text-sm text-gray-300">Support us through Ko-fi with one-time or recurring donations.</p>
+                            <a href="https://ko-fi.com/landecsorg" target="_blank" rel="noopener noreferrer" class="w-full rounded-lg bg-purple-400 py-2.5 text-sm font-bold text-background-dark transition hover:bg-purple-500 flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-[0.98]">
+                                Donate via Ko-fi
+                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- PayPal -->
+                    <div class="group relative overflow-hidden rounded-xl bg-surface-dark shadow-lg transition-all hover:shadow-primary/5 border border-[#392c28] hover:border-primary/30 animate-fadeInUp" style="animation-delay: 0.5s">
+                        <div class="relative flex h-full flex-col justify-end p-6 pt-20">
+                            <div class="mb-4 flex size-12 items-center justify-center rounded-full bg-blue-500/20 text-blue-400 backdrop-blur-sm">
+                                <span class="material-symbols-outlined">account_balance_wallet</span>
+                            </div>
+                            <h3 class="mb-1 text-xl font-bold text-white font-serif">PayPal</h3>
+                            <p class="mb-6 text-sm text-gray-300">Quick and easy support via your PayPal account.</p>
+                            <a href="https://paypal.me/eldrexbula" target="_blank" rel="noopener noreferrer" class="w-full rounded-lg bg-[#0070BA] py-2.5 text-sm font-bold text-white transition hover:bg-[#00609E] flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-[0.98]">
+                                Donate via PayPal
+                                <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- GCash -->
+                    <div class="group relative overflow-hidden rounded-xl bg-surface-dark shadow-lg transition-all hover:shadow-primary/5 border border-[#392c28] hover:border-primary/30 animate-fadeInUp" style="animation-delay: 0.6s">
+                        <div class="relative flex h-full flex-col justify-end p-6 pt-20">
+                            <div class="mb-4 flex size-12 items-center justify-center rounded-full bg-green-500/20 text-green-400 backdrop-blur-sm">
+                                <span class="material-symbols-outlined">qr_code</span>
+                            </div>
+                            <h3 class="mb-1 text-xl font-bold text-white font-serif">GCash</h3>
+                            <p class="mb-6 text-sm text-gray-300">Filipino supporters can easily support us using GCash via QR code or account transfer. Just scan the QR code to send your donation.</p>
+                            <button onclick="showGCashModal()" class="w-full rounded-lg bg-green-400 py-2.5 text-sm font-bold text-background-dark transition hover:bg-green-500 flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-[0.98]">
+                                Donate via GCash
+                                <span class="material-symbols-outlined text-[18px]">qr_code</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Philosophy Text Block -->
+            <section class="w-full max-w-4xl px-4 py-20 md:px-12">
+                <div class="flex flex-col gap-8 border-t border-[#392c28] pt-16 animate-fadeInUp" style="animation-delay: 0.8s">
+                    <div class="flex items-start gap-4">
+                        <span class="material-symbols-outlined text-primary text-3xl mt-1">format_quote</span>
+                        <div>
+                            <h2 class="text-3xl font-bold text-white mb-6 font-serif">Why Your Support Makes a Difference</h2>
+                            <div class="space-y-6 text-lg text-gray-300 font-light leading-loose">
+                                <p>
+                                    Every day, the internet becomes louder, faster, and more overwhelming. Amid this noise, LanDecs is committed to being a place of clarity—where thoughtful decisions can flourish without distractions or pressure to click, buy, or conform. Your support helps us maintain this focus.
+                                </p>
+                                <p>
+                                    Supporting LanDecs isn't just about funding a platform—it's about partnering in a vision. Your contribution allows us to remain independent, uphold the highest standards of privacy, and dedicate every ounce of our effort to building tools and experiences that genuinely serve you, our community.
+                                </p>
+                                <p>
+                                    Whether you choose to contribute financially, share our work, or simply engage with our tools, your involvement empowers a thoughtful, ad-free digital space. Thank you for standing with us and helping shape a web that values clarity, integrity, and purpose.
+                                </p>
+                            </div>
+                            <div class="mt-8 flex items-center gap-3">
+                                <div class="size-10 rounded-full bg-gray-700 bg-cover bg-center" data-alt="Portrait of the founder" style="background-image: url('https://eldrex.landecs.org/squad/eldrex.png')"></div>
+                                <div>
+                                    <p class="text-white font-medium font-serif">Eldrex Bula</p>
+                                    <p class="text-sm text-gray-500">Founder & CEO, LanDecs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer id="contact" class="w-full px-4 md:px-10 py-16 bg-background-dark border-t border-white/10">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-center gap-4">
+                            <img src="https://eldrex.landecs.org/landecs.png" alt="LanDecs Logo" class="w-16 h-16 rounded-xl object-contain">
+                            <h1 class="text-5xl font-bold text-white lowercase tracking-tight">landecs</h1>
+                        </div>
+                        <p class="text-gray-500 max-w-md text-lg leading-relaxed">
+                            We strengthen the links between people and ideas, giving you the insight and direction to thrive in a constantly changing world.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-12 lg:gap-20">
+                        <div class="flex flex-col gap-4">
+                            <h4 class="text-white font-semibold text-lg">Company</h4>
+                            <a href="https://www.landecs.org/" class="text-gray-500 hover:text-primary transition-colors duration-300">Home</a>
+                            <a href="https://www.landecs.org/docs/about" class="text-gray-500 hover:text-primary transition-colors duration-300">About</a>
+                            <a href="#tools" class="text-gray-500 hover:text-primary transition-colors duration-300">Products</a>
+                            <a href="#design" class="text-gray-500 hover:text-primary transition-colors duration-300">Design</a>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <h4 class="text-white font-semibold text-lg">Resources</h4>
+                            <a href="https://www.landecs.org/docs/privacy" class="text-gray-500 hover:text-primary transition-colors duration-300">Privacy</a>
+                            <a href="https://www.landecs.org/docs/terms" class="text-gray-500 hover:text-primary transition-colors duration-300">Terms</a>
+                            <a href="#" class="text-gray-500 hover:text-primary transition-colors duration-300">Donate</a>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <h4 class="text-white font-semibold text-lg">Connect</h4>
+                            <div class="flex flex-col gap-2">
+                                <a href="https://x.com/Landecs1" target="_blank" class="flex items-center gap-2 text-gray-500 hover:text-primary transition-colors duration-300">
+                                    <i class="fab fa-twitter w-5 h-5"></i> Twitter
+                                </a>
+                                <a href="www.linkedin.com/in/landecsorg1" target="_blank" class="flex items-center gap-2 text-gray-500 hover:text-primary transition-colors duration-300">
+                                    <i class="fab fa-linkedin w-5 h-5"></i> LinkedIn
+                                </a>
+                                <a href="https://www.facebook.com/landecs" target="_blank" class="flex items-center gap-2 text-gray-500 hover:text-primary transition-colors duration-300">
+                                    <i class="fab fa-facebook w-5 h-5"></i> Facebook
+                                </a>
+                                <a href="mailto:landecs.org@gmail.com" class="flex items-center gap-2 text-gray-500 hover:text-primary transition-colors duration-300">
+                                    <i class="fas fa-envelope w-5 h-5"></i> Email Us
+                                </a>
+                                <a href="tel:+639516326952" class="flex items-center gap-2 text-gray-500 hover:text-primary transition-colors duration-300">
+                                    <i class="fas fa-phone w-5 h-5"></i> Call Us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent my-8"></div>
+
+                <!-- Copyright -->
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                    <p class="text-gray-600 text-sm">© 2020 - 2025 LanDecs. All rights reserved.</p>
+                    <p class="text-gray-500 text-sm">Innovation you can trust.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- GCash Modal -->
+    <div id="gcashModal" class="fixed inset-0 bg-black/70 flex items-center justify-center z-50 hidden">
+        <div class="bg-surface-dark rounded-xl p-6 max-w-sm w-full mx-4 border border-[#392c28]">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-bold text-white font-serif">GCash Donation</h3>
+                <button onclick="closeGCashModal()" class="text-gray-400 hover:text-white">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <div class="text-center">
+                <img src="https://eldrex.landecs.org/support/gcash.png" alt="GCash QR Code" class="w-full max-w-[250px] mx-auto mb-4 rounded-lg">
+                <p class="text-gray-300 mb-2">Scan the QR code above using GCash app</p>
+                <p class="text-sm text-gray-400 mb-4">Or send directly to: <span class="text-primary font-mono">0951 632 6952</span></p>
+                <div class="flex gap-2">
+                    <button onclick="copyToClipboard('09516326952')" class="flex-1 bg-[#392c28] hover:bg-[#493a36] text-white py-2 rounded-lg transition flex items-center justify-center gap-2">
+                        <span class="material-symbols-outlined text-sm">content_copy</span>
+                        Copy Number
+                    </button>
+                    <a href="https://eldrex.landecs.org/support/gcash.png" download class="flex-1 bg-primary hover:bg-orange-600 text-white py-2 rounded-lg transition flex items-center justify-center gap-2">
+                        <span class="material-symbols-outlined text-sm">download</span>
+                        Save QR Code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Back button functionality
+        document.getElementById('backButton').addEventListener('click', function() {
+            if (window.history.length > 1) {
+                window.history.back();
+            } else {
+                // If there's no previous page in history, redirect to home
+                window.location.href = '/';
+            }
+        });
+
+        // GCash modal functionality
+        function showGCashModal() {
+            document.getElementById('gcashModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeGCashModal() {
+            document.getElementById('gcashModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('gcashModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeGCashModal();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeGCashModal();
+            }
+        });
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                // Show feedback
+                const button = event.target.closest('button');
+                const originalText = button.textContent;
+                button.innerHTML = '<span class="material-symbols-outlined text-sm">check</span> Copied!';
+                button.classList.add('bg-green-600', 'hover:bg-green-700');
+
+                setTimeout(function() {
+                    button.innerHTML = '<span class="material-symbols-outlined text-sm">content_copy</span> Copy Number';
+                    button.classList.remove('bg-green-600', 'hover:bg-green-700');
+                    button.classList.add('bg-[#392c28]', 'hover:bg-[#493a36]');
+                }, 2000);
+            }).catch(function(err) {
+                console.error('Failed to copy: ', err);
+                alert('Failed to copy to clipboard. Please copy manually: ' + text);
+            });
+        }
+
+        document.querySelectorAll('a[href^="http"]:not([href*="#"]), button[onclick^="showGCashModal"]').forEach(button => {
+            button.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px)';
+            });
+            button.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+
+</html>

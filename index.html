@@ -1,242 +1,945 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="dark" lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>LanDecs | Secure, Privacy-Focused Digital Solutions</title>
-    <meta name="title" content="LanDecs | Secure, Privacy-Focused Digital Solutions">
-    <meta name="description" content="LanDecs builds secure, privacy-first software solutions that empower users while protecting their data. Discover our innovative approach to digital trust.">
-
-    <link rel="canonical" href="https://www.landecs.org">
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>LanDecs - Innovation You Can Trust</title>
+    <meta name="title" content="LanDecs - Innovation You Can Trust | Decision Intelligence Tools">
+    <meta name="description" content="LanDecs creates reliable, forward-thinking solutions that help individuals and organizations move with confidence. Discover our ecosystem of decision intelligence tools including Countify+, LanTask, and more.">
+    <meta name="keywords" content="decision intelligence, productivity tools, Countify+, LanTask, innovation, privacy-focused software, strategic planning, task management, text analytics">
+    <meta name="author" content="LanDecs">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.landecs.org/">
-    <meta property="og:title" content="LanDecs | Secure, Privacy-Focused Digital Solutions">
-    <meta property="og:description" content="Innovative software solutions with uncompromising security and privacy protection.">
-    <meta property="og:image" content="https://www.landecs.org/images/landecs-social-preview.jpg">
+    <meta property="og:title" content="LanDecs - Innovation You Can Trust | Decision Intelligence Tools">
+    <meta property="og:description" content="Forward-thinking solutions for confident decision making. Explore our ecosystem of productivity and intelligence tools.">
+    <meta property="og:image" content="https://www.landecs.org/favicon/landecs-org-logo.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="LanDecs">
-
+    <meta property="og:image:alt" content="LanDecs - Innovation You Can Trust">
+    
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.landecs.org/">
-    <meta property="twitter:title" content="LanDecs | Secure, Privacy-Focused Digital Solutions">
-    <meta property="twitter:description" content="Innovative software solutions with uncompromising security and privacy protection.">
-    <meta property="twitter:image" content="https://www.landecs.org/landecs.png">
-
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="https://www.landecs.org/landecs.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://www.landecs.org/landecs.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://www.landecs.org/landecs.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned" color="#006BFF">
-    <meta name="msapplication-TileColor" content="#006BFF">
-    <meta name="theme-color" content="#006BFF">
-
-    <!-- Preconnect and Fonts -->
+    <meta property="twitter:url" content="https://landecs.org/">
+    <meta property="twitter:title" content="LanDecs - Innovation You Can Trust">
+    <meta property="twitter:description" content="Decision intelligence tools built for clarity, privacy, and intentional growth.">
+    <meta property="twitter:image" content="https://www.landecs.org/favicon/landecs-org-logo.jpg">
+    
+    <!-- Favicon Configuration -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.landecs.org/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.landecs.org/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.landecs.org/favicon/favicon-16x16.jpg">
+    <link rel="manifest" href="https://www.landecs.org/favicon/site.webmanifest">
+    <link rel="mask-icon" href="https://www.landecs.org/favicon/favicon-32x32.png" color="#ee652b">
+    <meta name="apple-mobile-web-app-title" content="LanDecs">
+    <meta name="application-name" content="LanDecs">
+    <meta name="msapplication-TileColor" content="#0f0f0f">
+    <meta name="msapplication-TileImage" content="https://www.landecs.org/favicon/favicon-32x32.png">
+    <meta name="theme-color" content="#0f0f0f">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.landecs.org/">
+    
+    <!-- Structured Data / Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "LanDecs",
+        "url": "https://www.landecs.org",
+        "logo": "https://www.landecs.org/favicon/landecs-org-logo.jpg",
+        "description": "Innovation you can trust. We create reliable, forward-thinking solutions that help you move with confidence.",
+        "founder": {
+            "@type": "Person",
+            "name": "Eldrex Delos Reyes Bula"
+        },
+        "foundingDate": "2020",
+        "sameAs": [
+            "https://x.com/Landecs1",
+            "https://www.linkedin.com/in/landecsorg1",
+            "https://www.facebook.com/landecs"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "Philippines"
+        }
+    }
+    </script>
+    
+    <!-- Additional Schema for SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Countify+",
+        "applicationCategory": "ProductivityApplication",
+        "operatingSystem": "Web",
+        "description": "Real-time word counting and text analytics tool that transforms writing into actionable insights.",
+        "url": "https://countify.landecs.org",
+        "publisher": {
+            "@type": "Organization",
+            "name": "LanDecs"
+        }
+    }
+    </script>
+    
+    <!-- Preconnect and DNS Prefetch -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "LanDecs",
-            "url": "https://www.landecs.org",
-            "logo": "https://www.landecs.org/landecs.png",
-            "description": "Secure, privacy-focused software solutions",
-            "sameAs": [
-                "https://www.facebook.com/profile.php?id=61565771175202&mibextid=ZbWKwL",
-                "https://x.com/Landecs1?t=6_TB4dQCiCiFr0tqGv2jWA&s=09"
-            ],
-            "address": {
-                "@type": "PostalAddress",
-                "addressCountry": "Philippines"
-            }
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee652b",
+                        "primary-light": "#ff7a3d",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#0f0f0f",
+                        "surface-dark": "#181311",
+                        "surface-light": "#ffffff",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.75rem",
+                        "lg": "1.25rem",
+                        "xl": "1.75rem",
+                        "2xl": "2.5rem",
+                        "full": "9999px"
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+                        'slide-up': 'slide-up 0.7s ease-out',
+                        'fade-in': 'fade-in 0.5s ease-out',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': {
+                                transform: 'translateY(0)'
+                            },
+                            '50%': {
+                                transform: 'translateY(-20px)'
+                            },
+                        },
+                        'pulse-glow': {
+                            '0%, 100%': {
+                                opacity: 0.5
+                            },
+                            '50%': {
+                                opacity: 0.8
+                            },
+                        },
+                        'slide-up': {
+                            '0%': {
+                                transform: 'translateY(20px)',
+                                opacity: 0
+                            },
+                            '100%': {
+                                transform: 'translateY(0)',
+                                opacity: 1
+                            },
+                        },
+                        'fade-in': {
+                            '0%': {
+                                opacity: 0
+                            },
+                            '100%': {
+                                opacity: 1
+                            },
+                        },
+                    }
+                },
+            },
         }
     </script>
+    
+    <!-- Custom Styles -->
+    <style>
+        /* Custom CSS */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            opacity: 0;
+            animation: fade-in 0.8s ease-out forwards;
+        }
+
+        .bg-noise {
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iLjc0IiBzdGl0Y2hUaWxlcz0ic3RpdGNoIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWx0ZXI9InVybCgjYSkiIG9wYWNpdHk9IjAuMDIiLz48L3N2Zz4=');
+        }
+
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px);
+        }
+
+        .glow-shadow {
+            box-shadow: 0 10px 40px -10px rgba(238, 101, 43, 0.2);
+        }
+
+        .section-fade {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .section-fade.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .sticky-nav {
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .sticky-nav.scrolled {
+            background: rgba(15, 15, 15, 0.9);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0f0f0f;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #ee652b;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ff7a3d;
+        }
+
+        /* Print styles */
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+        }
+    </style>
 </head>
 
-<body>
-    <!-- Header -->
-    <header id="header">
-        <div class="container header-container">
-            <a href="#" class="logo">
-                <div class="logo-icon"><img src="https://eldrex.landecs.org/landecs.png" alt="LanDecs Logo"></div>
-                <div class="logo-text">LanDecs</div>
-            </a>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display antialiased selection:bg-primary/30 selection:text-white overflow-x-hidden">
 
-            <nav id="mainNav">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#mission-vision">Mission & Vision</a></li>
-                    <li><a href="#products">Products</a></li>
-                </ul>
+    <!-- Navigation -->
+    <header class="sticky-nav fixed top-0 left-0 right-0 z-50 w-full py-4 px-6 lg:px-12">
+        <div class="mx-auto max-w-7xl flex items-center justify-between">
+            <!-- Logo - Image Only -->
+            <div class="flex items-center gap-2">
+                <a href="#hero" class="flex items-center justify-center transition-transform hover:scale-105 active:scale-95">
+                    <img src="https://eldrex.landecs.org/landecs.png" alt="LanDecs Logo" class="w-14 h-14 rounded-xl object-contain" style="background: none;">
+                </a>
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="#philosophy" class="text-gray-300 hover:text-white text-sm font-medium transition-colors duration-300 hover:scale-105">Philosophy</a>
+                <a href="#tools" class="text-gray-300 hover:text-white text-sm font-medium transition-colors duration-300 hover:scale-105">Products</a>
+                <a href="#design" class="text-gray-300 hover:text-white text-sm font-medium transition-colors duration-300 hover:scale-105">Design</a>
+                <a href="#privacy" class="text-gray-300 hover:text-white text-sm font-medium transition-colors duration-300 hover:scale-105">Privacy</a>
+                <a href="#founder" class="text-gray-300 hover:text-white text-sm font-medium transition-colors duration-300 hover:scale-105">Founder</a>
+                <a href="#contact" class="text-gray-300 hover:text-white text-sm font-medium transition-colors duration-300 hover:scale-105">Contact</a>
             </nav>
 
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
+            <!-- Separate Donate Button -->
+            <div class="hidden md:block">
+                <a href="/docs/donation" class="inline-flex items-center justify-center text-sm font-medium text-white transition-colors duration-300 hover:scale-105 px-6 py-3 rounded-xl bg-[#FF5C2E]/80 hover:bg-[#FF5C2E]/100 shadow-lg">
+                    Donate
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white p-2 rounded-lg">
+                <span class="material-symbols-outlined">menu</span>
             </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden absolute top-full left-0 right-0 bg-background-dark border-t border-white/10 p-6 hidden animate-slide-up">
+            <div class="flex flex-col gap-4">
+                <a href="#philosophy" class="text-gray-300 hover:text-white py-2 border-b border-white/5">Philosophy</a>
+                <a href="#tools" class="text-gray-300 hover:text-white py-2 border-b border-white/5">Products</a>
+                <a href="#design" class="text-gray-300 hover:text-white py-2 border-b border-white/5">Design</a>
+                <a href="#privacy" class="text-gray-300 hover:text-white py-2 border-b border-white/5">Privacy</a>
+                <a href="#founder" class="text-gray-300 hover:text-white py-2 border-b border-white/5">Founder</a>
+                <a href="#contact" class="text-gray-300 hover:text-white py-2 border-b border-white/5">Contacts</a>
+                <a href="/docs/donation" class="inline-block px-6 py-3 rounded-full font-extrabold text-white bg-[#FF5C2E]/90 hover:bg-[#FF5C2E]/100 transition-all duration-300 shadow-lg hover:shadow-xl text-center sm:px-8 sm:py-4">Donate</a>
+            </div>
         </div>
     </header>
 
-    <!-- Mobile Menu (hidden by default) -->
-    <div class="mobile-menu-container" id="mobileMenuContainer">
-        <div class="mobile-menu-content">
-            <nav class="mobile-menu-nav">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#mission-vision">Mission & Vision</a></li>
-                    <li><a href="#products">Products</a></li>
-                </ul>
-            </nav>
+    <section id="hero" class="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8 pt-20">
+        <div class="absolute inset-0 z-0 bg-[#0f0f0f]">
+            <div class="absolute inset-0 bg-noise opacity-10 mix-blend-overlay pointer-events-none"></div>
+            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/3 w-[80vw] h-[50vw] bg-primary/15 blur-[120px] rounded-full pointer-events-none animate-pulse-glow"></div>
+            <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/3 w-[40vw] h-[40vw] bg-primary/5 blur-[100px] rounded-full pointer-events-none"></div>
         </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 max-w-6xl flex flex-col items-center gap-10 md:gap-12 text-center animate-slide-up">
+            <!-- Headline -->
+            <h1 class="font-serif text-5xl md:text-7xl lg:text-[5.5rem] font-medium leading-[1.1] tracking-tight text-white">
+                Innovation you can <br class="hidden md:block" />
+                <span class="relative inline-block">
+                    trust.
+                    <span class="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary to-transparent"></span>
+                </span>
+            </h1>
+
+            <!-- Sub-headline -->
+            <p class="max-w-2xl text-lg md:text-xl text-gray-400 font-light leading-relaxed tracking-wide">
+                We create reliable, forward-thinking solutions that help you move with confidence.
+            </p>
+
+            <!-- CTA Section -->
+            <div class="flex flex-col sm:flex-row gap-5 sm:gap-6 pt-4">
+                <a href="#philosophy" class="group relative flex h-14 min-w-[200px] cursor-pointer items-center justify-center gap-3 overflow-hidden rounded-xl bg-primary px-8 text-white glow-shadow transition-all duration-300 hover:bg-primary-light hover:shadow-xl hover:shadow-primary/30 active:scale-95">
+                    <span class="text-base font-semibold tracking-wide">Learn more</span>
+                    <span class="material-symbols-outlined text-sm transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+                </a>
+
+                <a href="#tools" class="group flex h-14 min-w-[200px] cursor-pointer items-center justify-center gap-3 rounded-xl bg-transparent px-8 text-white border border-white/20 hover:bg-white/5 transition-all duration-300 hover:border-primary/30 active:scale-95">
+                    <span class="material-symbols-outlined text-[20px] transition-transform duration-300 group-hover:scale-110">explore</span>
+                    <span class="text-base font-medium">Discover LanDecs</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="section-fade w-full px-4 md:px-10 lg:px-20 py-24 md:py-32 bg-gradient-to-b from-background-dark to-background-dark/95">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+                <!-- Left Column: Philosophy Text -->
+                <div class="lg:col-span-5 flex flex-col gap-8 order-2 lg:order-1">
+                    <!-- Eyebrow Label -->
+                    <div class="flex items-center gap-3">
+                        <div class="h-[1px] w-8 bg-primary"></div>
+                        <span class="text-primary text-xs font-bold tracking-[0.15em] uppercase">The Philosophy</span>
+                    </div>
+
+                    <!-- Headline -->
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1] text-white">
+                        Innovation with <br />
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-light">Intention and Trust</span>
+                    </h2>
+
+                    <!-- Body Text -->
+                    <div class="flex flex-col gap-6">
+                        <p class="text-gray-400 text-lg md:text-xl font-light leading-[1.8] tracking-wide">
+                            LanDecs exists to help people and organizations move forward with confidence. We design systems, strategies, and tools that bring structure to complexity and turn uncertainty into clear, informed action.
+                        </p>
+                        <p class="text-gray-400 text-base md:text-lg font-light leading-[1.8]">
+                            We value thoughtful progress over rushed outcomes. By focusing on clarity, responsibility, and long-term impact, we create solutions that feel reliable, purposeful, and built to last.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Column: Image -->
+                <div class="lg:col-span-7 w-full h-full min-h-[500px] relative order-1 lg:order-2">
+                    <!-- Main Abstract Image Container -->
+                    <div class="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl shadow-black/50 card-hover">
+                        <!-- Background Image -->
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBBFVskZP8weBVw7_aGSZ2gu5UX4B3kurMTzQ52yaqEhbAf7P94pUro-ORKqpHPhDz84ciUE2OTDkr_QF5yDMmdJvaap1CAd7wdFSfGm3fIhQuEC7_rWixEPb2_5s-lbFyc-965CguqqvXbrjQfkkn4xI9p5XD5Joi_8_KXrwvNkvQ-KBe6B5vQ6uBxJg5m0HqzIpRfmtpU2lYa9T423KtkiotT4UJASCcTlRV0lNxCyjt6YJa6TX3a5Q-ZCnojsFTssPVSohPzWbs');">
+                        </div>
+
+                        <!-- Overlay Gradient -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-60"></div>
+
+                        <!-- Floating Interactive Element -->
+                        <div class="absolute bottom-8 left-8 p-6 bg-surface-dark/40 backdrop-blur-md border border-white/10 rounded-xl max-w-[260px] hidden sm:block animate-fade-in">
+                            <div class="flex items-center gap-3 mb-3">
+                                <span class="material-symbols-outlined text-primary animate-pulse">blur_on</span>
+                                <span class="text-white text-sm font-semibold tracking-wide">Focus Mode</span>
+                            </div>
+                            <div class="h-1 w-full bg-white/10 rounded-full overflow-hidden">
+                                <div class="h-full w-2/3 bg-primary rounded-full animate-pulse"></div>
+                            </div>
+                            <p class="mt-3 text-xs text-gray-400">Filtering noise...</p>
+                        </div>
+
+                        <!-- Abstract Light Orb -->
+                        <div class="absolute -top-10 -right-10 w-64 h-64 bg-primary/20 blur-[100px] rounded-full pointer-events-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pillars Section -->
+    <section id="pillars" class="py-20 md:py-32 px-4 md:px-10 lg:px-20">
+        <div class="mx-auto max-w-[1280px]">
+            <div class="mb-16 max-w-3xl animate-fade-in-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+                    Pillars of Growth
+                </h2>
+                <p class="text-gray-400 text-lg leading-relaxed">
+                    The core principles that guide our decisions, shape our systems, and ensure responsible, long-term growth.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: Precision -->
+                <div class="group relative aspect-[4/5] overflow-hidden rounded-2xl bg-surface-dark cursor-pointer hover-lift">
+                    <div class="absolute inset-0 bg-cover bg-center transition-all duration-700 group-hover:scale-110 group-hover:rotate-2 opacity-60 group-hover:opacity-40" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuACabvQQQE3dSZ-OFakcBniRbCrDk8IyIwBdgi9b7fNJxxnLPil_aOApNMzGUl7vO3BwY-SDtbk3tj4bCHOm4I3JXFQyFp5yRfTTn0dsk7727pSTMzEvskReoHFVNrHverVZIxs2Z5DvLAZ1iVIXBJXCvlhXMw6xZybKrPZD3Gk0N6I4IZSkf26MyNroEWmaaAxX7shC7YLxBhllQ6u5aXvGtaQ8e5T0XzHGWyTgx9JkbnOus-Y5mz3d7flOk1dZeDsOZk9xmnCLVI');"></div>
+
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end bg-gradient-to-t from-black/80 via-black/30 to-transparent">
+                        <div class="translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
+                            <div class="mb-6 inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/20 backdrop-blur-sm">
+                                <span class="material-symbols-outlined text-primary text-3xl">precision_manufacturing</span>
+                            </div>
+                            <h4 class="text-2xl font-bold text-white mb-3">Precision</h4>
+                            <p class="text-gray-400 text-base opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                                Targeted actions that eliminate waste and maximize impact. Every move calculated, every outcome intentional.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Hover Glow Effect -->
+                    <div class="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+
+                <!-- Card 2: Adaptation -->
+                <div class="group relative aspect-[4/5] overflow-hidden rounded-2xl bg-surface-dark cursor-pointer hover-lift border border-primary/30">
+                    <div class="absolute inset-0 bg-cover bg-center transition-all duration-700 group-hover:scale-110 group-hover:rotate-2 opacity-60 group-hover:opacity-40" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPKPy8dRKyy9-qNhTofW5O9OPg9eK_DXHycMPvqsh-iniH8zdIMlJJZ_pMObVii63h-FacwlpNo2vwJc5jHeIO9PNnqu_jDLLwPGnamuP7u6uU7AalwE4XovonRSAWPNVPoVj3mJuSOh0y_fPgLvR_GcBRKVqy8B5g8AJUuRTMg3OraBaPajMejbaHueDA0DVOGTSKOUByy7nsYPI_tHwkW-71XcZdKKV0e0qLZm9DmUnSPu38xEFSIkZmFBt2Y05V2OwBR33u8Pg');"></div>
+
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end bg-gradient-to-t from-black/80 via-black/30 to-transparent">
+                        <div class="translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
+                            <div class="mb-6 inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/20 backdrop-blur-sm">
+                                <span class="material-symbols-outlined text-primary text-3xl">waves</span>
+                            </div>
+                            <h4 class="text-2xl font-bold text-white mb-3">Adaptation</h4>
+                            <p class="text-gray-400 text-base opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                                Fluid strategies that evolve with the shifting landscape. Built to bend, not break, under pressure.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Hover Glow Effect -->
+                    <div class="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+
+                <!-- Card 3: Structure -->
+                <div class="group relative aspect-[4/5] overflow-hidden rounded-2xl bg-surface-dark cursor-pointer hover-lift">
+                    <div class="absolute inset-0 bg-cover bg-center transition-all duration-700 group-hover:scale-110 group-hover:rotate-2 opacity-60 group-hover:opacity-40" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDJGRXQCP8OdXkv7AqupAGptF_bbRAhK8XOPJifwJIJ1ur182AVyHuN8JuPu4pYQfLGjqGC8iv9d5Dva_awWk6pxaCK2Qx5FSTFtiZGkQWOCHuX6PWIPzR-LvDztJm34Kmfro5LQN3dRU9D_OmrCT0BOjPmS2AvvjW6j_1_jBE3vJauGjM-APu5b3SZ7ifFF4cT7mMh6-cS6PKxGrsP12MI2En-jxpThs3YuzrpJKqCLnx1WXLOhYDaDUrG5axbp-SlJmPy-Wz1pBA');"></div>
+
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end bg-gradient-to-t from-black/80 via-black/30 to-transparent">
+                        <div class="translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
+                            <div class="mb-6 inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/20 backdrop-blur-sm">
+                                <span class="material-symbols-outlined text-primary text-3xl">architecture</span>
+                            </div>
+                            <h4 class="text-2xl font-bold text-white mb-3">Structure</h4>
+                            <p class="text-gray-400 text-base opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                                Robust frameworks built to withstand market volatility. The foundation that supports exponential growth.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Hover Glow Effect -->
+                    <div class="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="tools" class="section-fade w-full px-4 md:px-10 py-24 md:py-32 bg-gradient-to-b from-background-dark/95 to-background-dark">
+        <div class="max-w-7xl mx-auto">
+
+            <!-- Section Header -->
+            <div class="flex flex-col items-start max-w-3xl mb-16 animate-fade-in-up">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-white mb-4">
+                    Innovation You Can Trust
+                </h2>
+                <p class="text-gray-400 text-lg md:text-xl font-normal leading-relaxed">
+                    Explore our ecosystem of premium tools, designed to bring clarity, direction, and intelligent solutions to decision makers.
+                </p>
+            </div>
+
+            <!-- Tools Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+
+                <div class="group relative flex flex-col p-8 h-80 rounded-2xl bg-surface-dark border border-white/5 card-hover hover:glow-shadow">
+                    <div class="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white/5 text-white group-hover:text-primary group-hover:bg-primary/10 transition-all duration-300">
+                        <span class="material-symbols-outlined text-[28px]">bar_chart</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Countify+</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Real-time word counting and text analytics. Transform writing into actionable insights with clarity and precision.
+                    </p>
+                    <div class="mt-auto pt-6 flex items-center gap-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                        <a href="https://countify.landecs.org" target="_blank" class="flex items-center text-primary text-sm font-semibold tracking-wide">
+                            Try Now
+                            <span class="material-symbols-outlined text-primary text-sm transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="group relative flex flex-col p-8 h-80 rounded-2xl bg-surface-dark border border-white/5 card-hover hover:glow-shadow">
+                    <div class="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white/5 text-white group-hover:text-primary group-hover:bg-primary/10 transition-all duration-300">
+                        <span class="material-symbols-outlined text-[28px]">qr_code_2</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">LanQ</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        LanQ – Private, offline QR codes with unlimited designs, no .tracking, no limits
+                    </p>
+                    <div class="mt-auto pt-6 flex items-center gap-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                        <a href="https://lanq.landecs.org" target="_blank" class="flex items-center text-primary text-sm font-semibold tracking-wide">
+                            Try Now
+                            <span class="material-symbols-outlined text-primary text-sm transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="group relative flex flex-col p-8 h-80 rounded-2xl bg-surface-dark border border-white/5 card-hover hover:glow-shadow">
+                    <div class="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white/5 text-white group-hover:text-primary group-hover:bg-primary/10 transition-all duration-300">
+                        <span class="material-symbols-outlined text-[28px]">code</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">TriLan C#</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        TriLan C# – Code anywhere, run instantly, no setup, no limits.
+                    </p>
+                        <span class="mt-3 inline-block text-xs font-semibold uppercase tracking-wider text-primary/80">
+        Beta
+    </span>
+                    <div class="mt-auto pt-6 flex items-center gap-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                        <a href="https://trilan-c.landecs.org" target="_blank" class="flex items-center text-primary text-sm font-semibold tracking-wide">
+                            Try Beta
+                            <span class="material-symbols-outlined text-primary text-sm transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+<div class="group relative flex flex-col p-8 h-80 rounded-2xl bg-surface-dark border border-white/5 card-hover hover:glow-shadow">
+    <div class="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white/5 text-white group-hover:text-primary group-hover:bg-primary/10 transition-all duration-300">
+        <span class="material-symbols-outlined text-[28px]">groups</span>
     </div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="floating-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-        </div>
-        <div class="container">
-            <div class="hero-content animate-on-scroll">
-                <h1>Innovation you can <span class="text-primary">trust.</span></h1><br><br>
-                <div class="hero-buttons animate-on-scroll" data-delay="0.4s">
-                    <a href="#about" class="btn btn-primary">
-                        Get Started <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="#products" class="btn btn-secondary">
-                        Our Products
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <h3 class="text-xl font-bold text-white mb-3">ClassPlay</h3>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container about-container">
-            <div class="about-content animate-on-scroll">
-                <p class="section-subtitle">About Us</p>
-                <h2>Learn more about LanDecs</h2>
-                <p>LanDecs is a start-up software company dedicated to building secure, privacy-first digital solutions that empower individuals and organizations. The name reflects our core philosophy: "Lan" represents the strong, continuous connection we maintain with the people we serve, while "Decs" signifies the thoughtful, strategic decisions that shape our path forward.</p>
-                <p>We believe in fostering meaningful relationships with clients, partners, and communities while making deliberate choices that drive innovation, adaptability, and sustainable growth.</p>
-            </div>
-            <div class="about-image animate-on-scroll" data-delay="0.2s">
-                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="LanDecs Team">
-            </div>
-        </div>
-    </section>
+    <p class="text-gray-400 text-sm leading-relaxed">
+        Turn classes into interactive games for groups, recitation, and presentations.
+    </p>
 
-    <!-- Mission & Vision Section -->
-    <section class="mission-vision" id="mission-vision">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <p class="section-subtitle">Our Purpose</p>
-                <h2>Mission & Vision</h2>
-            </div>
+    <span class="mt-3 inline-block text-xs font-semibold uppercase tracking-wider text-primary/80">
+        Beta
+    </span>
 
-            <div class="mission-vision-grid">
-                <div class="mission-card animate-on-scroll">
-                    <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
-                    <p>To connect and serve individuals through secure, private, and respectful digital interactions. We believe that technology should enhance human connection without compromising personal privacy or security.</p>
-                </div>
-
-                <div class="vision-card animate-on-scroll" data-delay="0.1s">
-                    <h3><i class="fas fa-eye"></i> Our Vision</h3>
-                    <p>To be the leading startup driving the responsible and secure digital transformation of the modern world. We envision a future where technology serves humanity with integrity, transparency, and respect for individual rights.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Products Section -->
-    <section class="products" id="products">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <p class="section-subtitle">Our Products</p>
-                <h2>Innovative Solutions</h2>
-                <p>Discover our portfolio of privacy-focused applications designed to enhance your digital experience.</p>
-            </div>
-
-            <div class="products-grid">
-                <div class="product-card animate-on-scroll">
-                    <div class="product-image">
-                        <img src="https://www.landecs.org/images/countify.svg" alt="Countify+">
+    <div class="mt-auto pt-6 flex items-center gap-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+        <a href="https://classplay.landecs.org" target="_blank" class="flex items-center text-primary text-sm font-semibold tracking-wide">
+            Try Beta
+            <span class="material-symbols-outlined text-primary text-sm transition-transform duration-300 group-hover:translate-x-1">
+                arrow_forward
+            </span>
+        </a>
+    </div>
+</div>
+                <div class="group relative flex flex-col p-8 h-80 rounded-2xl bg-surface-dark border border-white/5 card-hover hover:glow-shadow">
+                    <div class="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white/5 text-white group-hover:text-primary group-hover:bg-primary/10 transition-all duration-300">
+                        <span class="material-symbols-outlined text-[28px]">check_circle</span>
                     </div>
-                    <div class="product-content">
-                        <span class="product-badge">Countify+</span>
-                        <h3>Smart Word Counting</h3>
-                        <p>A smart, efficient word counting web app designed to help you track and analyze your text with ease and accuracy.</p>
-                        <a href="https://countify.landecs.org/" class="btn btn-primary">Explore Countify+</a>
-                    </div>
-                </div>
-
-                <div class="product-card animate-on-scroll" data-delay="0.1s">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="LanTask">
-                    </div>
-                    <div class="product-content">
-                        <span class="product-badge" style="background: linear-gradient(135deg, #5856D6 0%, #3A38B2 100%);">LanTask</span>
-                        <h3>Customizable Task Management</h3>
-                        <p>Experience next-level organization with <b>LanTask Beta 3</b> — your smarter, more personal to-do companion. 💡 Create, edit, or delete tasks effortlessly, customize layouts and themes, and manage your day your way. Simplicity meets innovation — all designed to keep you focused and in control.</p>
-                        <a href="https://landecs.org/lantask" class="btn btn-primary">Explore LanTask</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <h3>landecs</h3>
-                    <p>Because every detail tells a story.</p>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/share/16L4geMtaR/" class="social-link" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@landecs_org" class="social-link" aria-label="YouTube">
-                            <i class="fab fa-youtube"></i>
+                    <h3 class="text-xl font-bold text-white mb-3">LanTask</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        A smart task management app designed to streamline workflow, track progress, and boost productivity.
+                    </p>
+                    <div class="mt-auto pt-6 flex items-center gap-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                        <a href="https://lantask.landecs.org" target="_blank" class="flex items-center text-primary text-sm font-semibold tracking-wide">
+                            Try Now
+                            <span class="material-symbols-outlined text-primary text-sm transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
                         </a>
                     </div>
                 </div>
+                <div class="group relative flex flex-col p-8 h-80 rounded-2xl bg-transparent border border-dashed border-white/10 card-hover hover:border-primary/40">
+                    <div class="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white/5 text-gray-400 group-hover:text-primary group-hover:bg-primary/10 transition-all duration-300">
+                        <span class="material-symbols-outlined text-[28px]">edit_note</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">NoteDecs</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Capture ideas, organize thoughts, and plan with intelligence. A minimal note-taking app for maximum clarity.
+                    </p>
+                    <div class="mt-auto pt-6 flex items-center gap-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                        <span class="text-primary text-sm font-semibold tracking-wide">Coming Soon</span>
+                    </div>
+                </div>
+                <!-- Tool 4: NearCheck+ -->
+                <div class="group relative flex flex-col p-8 h-80 rounded-2xl bg-transparent border border-dashed border-white/10 card-hover hover:border-primary/40">
+                    <div class="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white/5 text-gray-400 group-hover:text-primary group-hover:bg-primary/10 transition-all duration-300">
+                        <span class="material-symbols-outlined text-[28px]">share_location</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">NearCheck+</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        A smart attendance monitoring system currently in development. Designed to bring reliability and efficiency to tracking.
+                    </p>
+                    <div class="mt-auto pt-6 flex items-center gap-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                        <span class="text-primary text-sm font-semibold tracking-wide">Coming Soon</span>
+                    </div>
+                </div>
+                <!-- Tool 5: Future Projects -->
+                <div class="group relative flex flex-col p-8 h-80 rounded-2xl bg-transparent border border-dashed border-white/10 card-hover hover:border-primary/40">
+                    <div class="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white/5 text-gray-400 group-hover:text-primary group-hover:bg-primary/10 transition-all duration-300">
+                        <span class="material-symbols-outlined text-[28px]">science</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">In the Lab</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Future tools for expanding horizons. We are constantly building what's next in decision intelligence.
+                    </p>
+                    <div class="mt-auto pt-6 flex items-center gap-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                        <span class="text-primary text-sm font-semibold tracking-wide">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Design Philosophy Section -->
+    <section id="design" class="section-fade w-full px-4 md:px-10 py-24 md:py-32 bg-gradient-to-b from-background-dark to-surface-dark">
+        <div class="max-w-6xl mx-auto">
+            <!-- Section Header -->
+            <div class="mb-16">
+                <h2 class="text-4xl md:text-5xl font-black leading-tight text-white mb-6">
+                    Design <span class="text-primary">Philosophy</span>
+                </h2>
+                <p class="text-gray-400 text-xl font-light leading-relaxed max-w-3xl">
+                    At LanDecs, we create tools that respect human focus, safeguard privacy, and amplify purpose. Every interface, interaction, and feature is designed for clarity, intention, and trust.
+                </p>
+            </div>
 
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#mission-vision">Mission & Vision</a></li>
-                        <li><a href="#products">Products</a></li>
-                    </ul>
+            <!-- Principles Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Principle 1: Clarity -->
+                <div class="group bg-surface-dark border border-white/5 rounded-2xl p-8 card-hover hover:glow-shadow">
+                    <div class="mb-6">
+                        <div class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 text-primary mb-4">
+                            <span class="material-symbols-outlined text-[32px]">filter_center_focus</span>
+                        </div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-primary font-bold text-sm">01</span>
+                            <div class="h-px w-6 bg-primary"></div>
+                            <span class="text-white font-bold tracking-widest uppercase">Clarity</span>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Guiding focus, reducing noise.</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        We strip away distractions to highlight what truly matters. Every interface is crafted to help you think, decide, and act with confidence in a world full of noise.
+                    </p>
                 </div>
 
-                <div class="footer-links">
-                    <h3>Our Products</h3>
-                    <ul>
-                        <li><a href="https://countify.landecs.org/">Countify+</a></li>
-                        <li><a href="https://landecs.org/lantask">LanTask</a></li>
-                    </ul>
+                <!-- Principle 2: Privacy -->
+                <div class="group bg-surface-dark border border-white/5 rounded-2xl p-8 card-hover hover:glow-shadow">
+                    <div class="mb-6">
+                        <div class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 text-primary mb-4">
+                            <span class="material-symbols-outlined text-[32px]">lock</span>
+                        </div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-primary font-bold text-sm">02</span>
+                            <div class="h-px w-6 bg-primary"></div>
+                            <span class="text-white font-bold tracking-widest uppercase">Privacy</span>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Your work, your control.</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        We build tools where your data stays yours. True freedom to create comes from trust. LanDecs products protect your information while empowering you to focus on what matters.
+                    </p>
+                </div>
+
+                <!-- Principle 3: Intentionality -->
+                <div class="group bg-surface-dark border border-white/5 rounded-2xl p-8 card-hover hover:glow-shadow">
+                    <div class="mb-6">
+                        <div class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 text-primary mb-4">
+                            <span class="material-symbols-outlined text-[32px]">architecture</span>
+                        </div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-primary font-bold text-sm">03</span>
+                            <div class="h-px w-6 bg-primary"></div>
+                            <span class="text-white font-bold tracking-widest uppercase">Intentionality</span>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Purpose in every detail.</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Every feature, every pixel, every interaction is deliberate. LanDecs designs empower action, focus, and thoughtful decisions, turning complexity into clarity.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section id="privacy" class="section-fade w-full px-4 md:px-10 py-24 md:py-32 bg-gradient-to-b from-background-dark to-surface-dark">
+        <div class="max-w-6xl mx-auto">
+            <!-- Section Header -->
+            <div class="text-left mb-16">
+                <h2 class="text-4xl md:text-5xl font-black tracking-tight leading-[1.1] text-white mb-6">
+                    Uncompromising <span class="text-primary">Privacy</span>
+                </h2>
+                <p class="text-gray-400 text-xl font-normal leading-relaxed max-w-3xl mx-auto">
+                    We build tools for clarity, not surveillance. No ads, no trackers, just focus.
+                </p>
+            </div>
+
+            <!-- Privacy Features -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="group bg-surface-dark border border-white/5 rounded-2xl p-8 card-hover">
+                    <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <span class="material-symbols-outlined !text-[32px]">cloud_off</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Offline First</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Your data lives on your device. Syncing is optional and end-to-end encrypted. We prioritize local storage for speed and security.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="group bg-surface-dark border border-white/5 rounded-2xl p-8 card-hover">
+                    <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <span class="material-symbols-outlined !text-[32px]">visibility_off</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">No Hidden Scripts</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        We don't sell your attention. Our business model is simple: you pay for the tool, not with your data. No pixels, no cookies.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="group bg-surface-dark border border-white/5 rounded-2xl p-8 card-hover">
+                    <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <span class="material-symbols-outlined !text-[32px]">folder_open</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Open Standards</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Export your data anytime in standard formats like JSON, Markdown, or CSV. We believe in ownership, not lock-in.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Founder Section -->
+    <section id="founder" class="section-fade w-full px-4 md:px-10 py-24 md:py-32 bg-gradient-to-b from-surface-dark to-background-dark">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+                <!-- Left Column: Founder Image -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <div class="aspect-square bg-gradient-to-br from-primary/20 to-transparent rounded-2xl overflow-hidden">
+                            <div class="absolute inset-0 bg-cover bg-center opacity-80" style="background-image: url('https://eldrex.landecs.org/squad/eldrex.png');"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent"></div>
+                        </div>
+
+                        <!-- Founder Badge -->
+                        <div class="absolute bottom-6 left-6 bg-background-dark/90 backdrop-blur-sm border border-white/10 rounded-xl p-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-primary">person</span>
+                                </div>
+                                <div>
+                                    <p class="text-white text-sm font-medium">Founder & CEO</p>
+                                    <p class="text-primary text-xs">Eldrex Delos Reyes Bula</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Founder Content -->
+                <div class="lg:col-span-7">
+                    <div class="flex flex-col gap-8">
+                        <!-- Eyebrow Label -->
+                        <div class="flex items-center gap-3">
+                            <div class="h-[1px] w-8 bg-primary"></div>
+                            <span class="text-primary text-xs font-bold tracking-[0.15em] uppercase">Founder Journey</span>
+                        </div>
+
+                        <!-- Headline -->
+                        <h2 class="text-4xl md:text-5xl font-black tracking-tight leading-[1.1] text-white">
+                            Experimentation & <span class="text-primary">Growth</span>
+                        </h2>
+
+                        <!-- Quote -->
+                        <div class="relative pl-8 py-4">
+                            <div class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-primary to-primary-light rounded-full"></div>
+                            <blockquote class="text-2xl md:text-3xl font-serif italic text-gray-300 leading-relaxed">
+                                "LanDecs is a journey of exploration. Every idea tested, every change made, is a step toward creating tools that truly empower. Clarity comes through action, not perfection."
+                            </blockquote>
+                            <p class="text-gray-500 mt-4 text-lg">— Eldrex Delos Reyes Bula</p>
+                        </div>
+
+                        <!-- Biography -->
+                        <div class="space-y-4">
+                            <p class="text-gray-400 leading-relaxed">
+                                Since founding LanDecs in 2020 at a young age, Eldrex has been experimenting, learning, and refining the company’s vision. Each iteration and decision pushes the boundaries of what the brand can achieve.
+                            </p>
+                            <p class="text-gray-400 leading-relaxed">
+                                Focused on clarity, privacy, and innovation, he tests ideas daily, adapts strategies, and builds tools designed to empower individuals and early-stage organizations to navigate complexity with confidence.
+                            </p>
+                            <p class="text-gray-400 leading-relaxed">
+                                LanDecs remains a work in progress—driven by curiosity, experimentation, and a commitment to purposeful growth. Every change made lays the foundation for a trusted ecosystem of tools and experiences.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="w-full px-4 md:px-10 py-16 bg-background-dark border-t border-white/10">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
+                <div class="flex flex-col gap-6">
+                    <div class="flex items-center gap-4">
+                        <img src="https://eldrex.landecs.org/landecs.png" alt="LanDecs Logo" class="w-16 h-16 rounded-xl object-contain">
+                        <h1 class="text-5xl font-bold text-white lowercase tracking-tight">landecs</h1>
+                    </div>
+                    <p class="text-gray-500 max-w-md text-lg leading-relaxed">
+                        We strengthen the links between people and ideas, giving you the insight and direction to thrive in a constantly changing world.
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap gap-12 lg:gap-20">
+                    <div class="flex flex-col gap-4">
+                        <h4 class="text-white font-semibold text-lg">Company</h4>
+                        <a href="#" class="text-gray-500 hover:text-primary transition-colors duration-300">Home</a>
+                        <a href="https://www.landecs.org/docs/about" class="text-gray-500 hover:text-primary transition-colors duration-300">About</a>
+                        <a href="#tools" class="text-gray-500 hover:text-primary transition-colors duration-300">Products</a>
+                        <a href="#design" class="text-gray-500 hover:text-primary transition-colors duration-300">Design</a>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h4 class="text-white font-semibold text-lg">Resources</h4>
+                        <a href="https://www.landecs.org/docs/privacy" class="text-gray-500 hover:text-primary transition-colors duration-300">Privacy</a>
+                        <a href="https://www.landecs.org/docs/terms" class="text-gray-500 hover:text-primary transition-colors duration-300">Terms</a>
+                        <a href="https://www.landecs.org/docs/donation" class="text-gray-500 hover:text-primary transition-colors duration-300">Donate</a>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h4 class="text-white font-semibold text-lg">Connect</h4>
+                        <div class="flex flex-col gap-2">
+                            <a href="https://x.com/Landecs1" target="_blank" class="flex items-center gap-2 text-gray-500 hover:text-primary transition-colors duration-300">
+                                <i class="fab fa-twitter w-5 h-5"></i> Twitter
+                            </a>
+                            <a href="www.linkedin.com/in/landecsorg1" target="_blank" class="flex items-center gap-2 text-gray-500 hover:text-primary transition-colors duration-300">
+                                <i class="fab fa-linkedin w-5 h-5"></i> LinkedIn
+                            </a>
+                            <a href="https://www.facebook.com/landecs" target="_blank" class="flex items-center gap-2 text-gray-500 hover:text-primary transition-colors duration-300">
+                                <i class="fab fa-facebook w-5 h-5"></i> Facebook
+                            </a>
+                            <a href="mailto:landecs.org@gmail.com" class="flex items-center gap-2 text-gray-500 hover:text-primary transition-colors duration-300">
+                                <i class="fas fa-envelope w-5 h-5"></i> Email Us
+                            </a>
+                            <a href="tel:+639516326952" class="flex items-center gap-2 text-gray-500 hover:text-primary transition-colors duration-300">
+                                <i class="fas fa-phone w-5 h-5"></i> Call Us
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="footer-bottom">
-                <img src="https://eldrex.landecs.org/landecs.png" style="width: 50%; height: 50%;" alt="LanDecs Logo" class="footer-logo">
-                <p>© 2025 LanDecs. All rights reserved.</p>
-                <p>Made with <i class="fas fa-heart heart" style="color: #FF2E2E;"></i> in the Philippines</p>
+            <!-- Divider -->
+            <div class="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent my-8"></div>
+
+            <!-- Copyright -->
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-gray-600 text-sm">© 2020 - 2025 LanDecs. All rights reserved.</p>
+                <p class="text-gray-500 text-sm">Innovation you can trust.</p>
             </div>
         </div>
     </footer>
-    <script src="/js/main.js"></script>
+
+    <!-- JavaScript for interactivity -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when clicking a link
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+
+        // Sticky navigation on scroll
+        const header = document.querySelector('.sticky-nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Intersection Observer for section animations
+        const sections = document.querySelectorAll('.section-fade');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // Add hover effects to cards
+        document.addEventListener('DOMContentLoaded', () => {
+            // Page load animation
+            document.body.style.opacity = '1';
+        });
+    </script>
 </body>
 
 </html>
